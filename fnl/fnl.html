@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Pâtisserie des Étoiles</title>
+      <link rel="icon" href="images/y1.png" type="image/x-icon">
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+      <link rel="stylesheet" type="text/css" href="fl.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,800;1,600&display=swap');
+ </style>
+</head>
+<body>
+    <section class="col">
+            <div class="cir" id="wr"></div>
+        <header class="her">
+            <div class="log">
+            <img src="images/y1.png" class="logo">
+            <h1>Pâtisserie des Étoiles</h1> 
+            </div>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="nav">
+                <li><a href="#" class="act">HOME</a></li>
+                <li><a href="file:///C:/Users/Loraine/Downloads/fnl/promo1.html">PROMOS</a></li>
+                <li><a href="file:///C:/Users/Loraine/Downloads/fnl/PasCntct.html">CONTACT US</a></li>
+                <li><a href="file:///C:/Users/Loraine/Downloads/fnl/abtus.html">ABOUT US</a></li>
+                <li><a href="file:///C:/Users/Loraine/Downloads/fnl/table.html">PRICE RANGE</a></li>
+                <li><a href="#bd">MORE INFO</a></li>
+            </ul>
+        </header>
+        <div class="c">
+            <div class="tx">
+                <h2><span>Heavenly Delights</span></h2>
+                <p>drawn from the town's dear French oven.</p>
+                <button type="button" c><span></span><a href="#pastry">Pastries</a></button>
+                <button type="button"><span></span><a href="#yoga">Milkshakes & Yogurts</a></button>
+            </div>
+                <div class="imb">
+                    <map name="boat" id="boat">
+   <area href="https://mymerrychristmas.com/" shape="rect"
+   coords="100, 188, 339, 283" alt="Door County Fishing Boat">
+   </map>
+   <img src="images/ctr.png" class="cl" usemap="#boat" alt="Door County"
+   width="416" height="350">
+                    <!-- <img src="images/ctr.png" class="cl"> -->
+                </div>
+        </div>
+        <ul class="in">
+            <li><img src="images/ps.png" onclick="imgSlider('images/ps.png');changeCircleColor('#abc4ff')"></li>
+            <li><img src="images/mk.png" onclick="imgSlider('images/mk.png');changeCircleColor('#dfb2f4')"></li>
+            <li><img src="images/yg.png" onclick="imgSlider('images/yg.png');changeCircleColor('#CDF0EA')"></li>
+        </ul>
+        <ul class="ch">
+            <!-- <li><a href="#"><img src="fb.png"></a></li>
+            <li><a href="#"><img src="ig.png"></a></li>
+            <li><a href="#"><img src="tw.png"></a></li> -->
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.cl').src = anything;
+        }
+        function changeCircleColor(color){
+            const cir = document.querySelector('.cir');
+            cir.style.background = color;
+        }
+        // function toggleMenu(){
+        //     var menuToggle = document.querySelector('.toggle');
+        //     var nav = document.querySelector('.nav')
+        //     menuToggle.classList.toggle('active')
+        //     nav.classList.toggle('active')
+        // }
+    </script>
+
+    <!--pastries-->
+
+    <section class="prod" id="pastry">
+        <div class="he">
+            <h2>All of Pastries</h2>
+        </div>
+        <div class="swiper prod-row">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/mgc.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Mango-Cherry Cake</h3>
+                    <p>This Mango-Cherry Cake is the fusion of yellow mangoes and unripe cherries which will give you a hint of sourness but a burst of delight.</p>
+                    <div class="order">
+                        <button><a href="https://leeweebrothers.com/checkout-success">Order Now</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/bf.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Black Forest Cake</h3>
+                    <p>This Black Forest Cake combines rich chocolate cake layers with fresh cherries, cherry liqueur, and a simple whipped cream frosting.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/cck.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Chocolate Cake</h3>
+                    <p>This Classic Chocolate Cake is a two layer 8-inch cake frosted with authentic chocolate with almonds and wafers on top.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/sw.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Strawberry Cake</h3>
+                    <p>This Strawberry Cake combines layers with strawberry flavored cream cheese frosting, so you get fresh strawberry flavors with every bite.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/cdo.png" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Assorted Doughnuts</h3>
+                    <p>This Assorted Doughnuts consists of flavors like strawberry, chocolate, butternut and more. And of course, with sprinkles on top to finish.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/stat.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Strawberry Tart</h3>
+                    <p>This strawberry tart begins with a baked sweet pastry crust which is filled with a cream cheese custard filling topped with fruit and sweet glaze.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/kw.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Croissant</h3>
+                    <p>A delicate, perfectly flaky butter croissant freshly baked to a golden brown with a slightly. Our croissants have all the flavour and lightness of a classic French croissant.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/pie.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Blueberry Pie</h3>
+                    <p>A classic homemade delight, blueberry pie is a baked dessert that comes together with a golden, flaky pie crust base and a sweet blueberry filling.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/bbi.png" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Berry Deluxe</h3>
+                    <p>Berry Deluxe is a mult-layered desert mostly consisting of custard, creamcheese and a secret layer for you to find out, also with fresh fruits on top.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="prod" id="yoga">
+        <div class="he">
+            <h2>Milkshakes & Yogurts</h2>
+        </div>
+        <div class="swiper prod-row">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/stw.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Strawberry Milkshake</h3>
+                    <p>This Strawberry Milkshake is thick, creamy, and everything that you would hope a milkshake would be! This classic dessert is so delicious!</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/ch3.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Chocolate Milkshake</h3>
+                    <p>This Chocolate Milkshake has the divine taste of rich and creamy milkshake prepared with premium chocolate with the whipped cream and chocolate syrup.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/van.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Vanilla Milkshake</h3>
+                    <p>This Vanilla Milkshake is a smooth and creamy concoction of vanilla ice cream, milk, vanilla extract topped with whipped cream and chocolate vermicelli.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/che.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Cherry Milkshake</h3>
+                    <p>This Vanilla Milkshake is a smooth and creamy fusion of vanilla, cherry and milk topped with whipped cream and cherry syrup to satisfy you.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/ygt.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Berry Yogurt</h3>
+                    <p>This Berry Yogurt has silky yogurt, crunchy granola, sweet juicy berries and naturally sweet honey all come together to create a medley.</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <div class="img">
+                    <img src="images/pp.jpg" width="300" height="200">
+                </div>
+                <div class="prod-content">
+                    <h3>Blueberry Popsicle Yogurt</h3>
+                    <p>An NEW Menu! Blueberry Popsicle Yogurt is a frozen blueberry-flavored yogurt with blueberries infused. Enjoy as it melts to your moth and BRAIN FREEZE!</p>
+                    <div class="order">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <footer class="footer" id="bd">
+        <div class="cot">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">Owners</a></li>
+                    <li><a href="file:///C:/Users/Loraine/Downloads/fnl/abtus.html">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">delivery</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>top reviews</h4>
+                <ul>
+                    <li><a href="#">Super love it!</a></li>
+                    <li><a href="#">Luscious!</a></li>
+                    <li><a href="#">Satisfied my sweet tooth.</a></li>
+                    <li><a href="#">Would go back a thousand times!</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><img src="images/fb.png"></a>
+                    <a href="https://twitter.com/"><img src="images/twt.png"></a>
+                    <a href="https://www.instagram.com/"><img src="images/ig.png"></a>
+                </div>
+            </div>
+        </div>
+     </div>
+    </footer>
+
+    <script src="jav.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-radius;
+  border-radius: 25px;
+  background-color: #b8e0d2;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+}
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  margin-left: 22%;
+  background: url(images/ste.png);
+  background-size: 100%;
+  background-repeat: repeat-x;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #ffee93;
+  border-color: black;
+  color: black;
+  font-weight: 100%;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  border-color: black;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #007aff;
+  border-radius: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+button{
+   width: 200px;
+   padding: 15px 0;
+   text-align: center;
+   margin: 20px 10px;
+   border-radius: 25px;
+   font-weight: bold;
+   border: 3px ;
+   background: #ffee93;
+   color: #017143;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+   border: outset 5px;
+}
+
+.c .tx button span::after, .c .tx button span::before{
+   content: "";
+   opacity: 0.3;
+   background: #7B68EE;
+   height: 100%;
+   width: 0;
+   border-radius: inherit;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   z-index: -1;
+   transition: transform 0.5s ease;
+}
+
+button:hover span{
+   width: 100%;
+}
+
+button:hover{
+   transform: translate(-12px, -12px);
+   border: none;
+   background:  #f5e960;
+
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
